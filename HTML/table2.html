@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-2</title>
+</head>
+<body>
+    <h1>Invoice</h1>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>MAMA</td>
+                <td>300</td>
+                <td>3</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>EGG</td>
+                <td>150</td>
+                <td>10</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Unimax Fan</td>
+                <td>11000</td>
+                <td>1</td>
+                <td>11000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- removing coloumns->colspan -->
+                <td colspan="4" align="right">Total</td>
+                <td>13400</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Save Money</h2>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Save Money</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowspan=only at first row that u want to combine -->
+                <td>January</td>
+                <td>30000</td>
+                <td rowspan="3">75000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>30000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
