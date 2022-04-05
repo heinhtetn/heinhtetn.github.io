@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops_JS</title>
+</head>
+<body>
+    
+    <script>
+        for (let i = 1; i <= 5; i++){
+            document.write('<h3>Hello JS</h3>');
+        }
+
+        let list = ['Mg Mg','Ma Ma','Mya Mya','Hla Hla','Aung Aung','Kaung Kaung'];
+        for (let j = 0; j < list.length; j++){
+            document.write(`<h3>${list[j]}</h3>`);
+        }
+
+        for (let n = 1; n <= 12; n++){
+            document.write(`<h3>12 x ${n}= ${12*n}</h3>`);
+        }
+
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+        for (let k = 0; k < 5; k++){
+            for(let l = 0; l < 5; l++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        for (let m = 0; m < 5; m++){
+            for (let p = 0; p <= m; p++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        // Assignment
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+
+        // While Loop
+
+        let num = 1;
+        while (num <= 10){
+            document.write(`<h3>This number is ${num}</h3>`);num++
+        }
+
+        let no = 1;
+        do{
+            document.write(`<h3>This is ${no}</h3>`);no ++;
+        }while(no <= 10)
+
+        
+    </script>
+</body>
+</html>
