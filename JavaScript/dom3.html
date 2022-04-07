@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DOM</title>
+</head>
+<body>
+    <h1 id="h1" onclick="change()">CSS DOM</h1>
+    <img src="./dom_img.png" alt="" width="400" id="img">
+    <br><br>
+    <button type="button" onclick="changeSize()">Change</button>
+    <br><br>
+    <img src="./images.jpg" alt="" width="300" id="image" onmouseover="big()" onmouseout="normal()">
+
+    <script>
+        function change(){
+            let h1 = document.querySelector('#h1');
+            h1.style.backgroundColor = 'red';
+            h1.style.color = 'white';
+        }
+        function changeSize(){
+            let img = document.querySelector('#img');
+            img.style.width = '700px';
+            img.style.height = '400px';
+        }
+
+        function big(){
+            let image = document.querySelector('#image');
+            image.style.width = '500px';
+            image.style.height = '450px';
+        }
+        function normal(){
+            let image = document.querySelector('#image');
+            image.style.width = '300px';
+            image.style.height = '250px';
+        }
+    </script>
+</body>
+</html>

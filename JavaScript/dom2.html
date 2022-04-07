@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Create</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeColor()">Element Create</h1>
+    <button type="button" onclick="create()">Create</button>
+    <br><br>
+    <input type="text" name="name" id="name">
+    <button type="button" onclick="adding()">Add</button>
+    <ul id="u_list">
+        <li>Mg Mg</li>
+    </ul>
+    <script>
+        function create(){
+            // alert('hello');             
+            let h3 = document.createElement('h3');
+            console.log(h3);
+            h3.innerHTML = 'Create h3 Element';
+            console.log(h3);
+            document.body.appendChild(h3);
+        }
+
+        function adding(){
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let list = document.createElement('li');
+            list.innerHTML = name;
+
+            let u_list = document.querySelector('#u_list');
+            u_list.appendChild(list);
+        }
+
+        function changeColor(){
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+            if (attr){
+                heading.removeAttribute('style');
+            }else{
+                heading.setAttribute('style','color:red;');
+            }
+        }
+
+    </script>
+</body>
+</html>
