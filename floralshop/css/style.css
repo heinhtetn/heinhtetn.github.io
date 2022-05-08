@@ -1,0 +1,431 @@
+/* nav */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.p1{
+    position: relative;
+    top: -60px;
+    left: 85px;
+    font-family: lobster;
+    font-size: 20px;
+}
+.nav1 ul{
+    float: right;
+}
+
+.div1{
+    display: inline-block;
+}
+
+.nav1 ul{
+    display: inline-block;
+}
+
+.nav1 ul li{
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+
+.nav1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+@font-face{
+    src: url(../Lobster/Lobster-Regular.ttf);
+    font-family: lobster;
+}
+
+.nav1 ul li a:hover{
+    color: #3797b9;
+    transform: translate(5px,-5px);
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+.span1{
+    position: relative;
+    top: -13px;
+    background-color: black;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+.nav1{
+    height: 90px;
+}
+
+.img{
+    width: 100%;
+}
+
+.bg_text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.heading1{
+    font-family: lobster;
+    font-weight: unset;
+    margin-bottom: 15px;
+}
+
+.btn{
+    border: 1px solid #3797b9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #3797b9;
+}
+
+.btn:hover{
+    background-color: #3797b9;
+    color: white;
+}
+
+.heading2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.divided{
+    width: 100px;
+    margin: auto;
+    border: 1px solid #3797b9;
+    margin-bottom: 50px;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-gap: 40px;
+    text-align: center;
+}
+.product div img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .17);
+}
+.product div button{
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgb(221, 218, 218);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.product div button:hover{
+    cursor: pointer;
+}
+
+.stat{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 50px;
+    background-image:url(../images/redroses.jpg);
+    color: white;
+    font-family: lobster;
+    font-weight: unset;
+}
+
+.stat div hr{
+    width: 30px;
+    margin: auto;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.stat div h1{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.stat div{
+    padding: 50px;
+}
+
+
+.package {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.package img{
+    width: 45%;
+    float: left;
+    border-radius: 5px;
+}
+
+.package div{
+    position: relative;
+    left: 50px;
+    width: 90%;
+    text-align: justify;
+}
+
+.fa-circle-arrow-right{
+    padding-right: 10px;
+}
+
+.package h1{
+    margin-bottom: 30px;
+    font-family: lobster;
+    font-weight: unset;
+    color: #3797b9;
+}
+
+.package div h2{
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+
+.div_service{
+    margin-top: 50px;
+    background-color:rgb(221, 218, 218) ;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.div_service div p{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.div_service div p b{
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #212529;
+}
+
+.footer_nav{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 50px;
+    margin: 20px 20px;
+}
+
+.design{
+    color: white;
+}
+
+.footer_icon{
+    color: white;
+    margin: 20px 10px 0px;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+/* contact */
+.contact{
+    text-align: center;
+    background-color: #e1ecee;
+}
+
+.contact h1{
+    padding: 40px 0px;
+}
+
+.contact1{
+    display: grid;
+    grid-template-columns: 235px 235px 235px 235px;
+    text-align: center;
+    margin-top: 80px;
+    grid-column-gap: 50px;
+    margin-left: 200px;
+}
+
+.contact1 div{
+    background-color: #f6f7f7;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact1 div p{
+    font-weight: bold;
+}
+
+.message{
+    display: grid;
+    grid-template-columns: 500px auto;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+input[type="text"],input[type="email"]{
+    width: 100%;
+    height: 35px;
+}
+
+#message{
+    width: 100%;
+    height: 100px;
+}
+
+.label{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.send_btn{
+    float: right;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+
+.map{
+    padding-right: 230px;
+    margin-top: 80px;
+    padding-left: 50px;
+}
+
+.shop img{
+    width: 100%;
+}
+.shop h1{
+    position: absolute;
+    bottom: -100px;
+    left: 200px;
+    color: #3797b9;
+    font-family: lobster;
+    font-weight: unset;
+    font-size: 50px;
+}
+.product_header{
+    text-align: center;
+    margin-top: 80px;
+    color: #3797b9;
+}
+.products{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.products div{
+    margin-bottom: 40px;
+}
+
+.products div button,.popular div button{
+    border: 1px solid #3797b9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e1ecee;
+    margin-top: 20px;
+}
+.products div button:hover{
+    color: #3797b9;
+}
+
+.popu_now{
+    margin-top: 10px;
+    color: #3797b9;
+    text-align: center;
+}
+
+.popular div{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.popu_text{
+    font-size: large;
+
+}
+
+.popular div img{
+    float: left;
+    padding-right: 50px;
+}
+
+.popu_text1{
+    padding-left: 80px;
+}
+
+.popu_text2{
+    margin-top: 30px;
+    text-align: justify;
+}
+.popular{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.wrw{
+    /* position: absolute; */
+    /* margin-top: -150px;
+    margin-left: 250px; */
+    text-align: justify;
+    color: #3797b9;
+}
+.wrw1{
+    margin-top: 80px;
+    background-color: #e1ecee;
+    padding: 30px;
+}
+
+.wsh{
+    margin-top: 80px;
+    color: #3797b9;
+    padding: 50px;
+    background-color: #e1ecee;
+}
+
+.grid_bg{
+    background-image: url(../images/blogbg2.jpg);
+    padding: 200px;
+}
+
+.tyou{
+    text-align: center;
+    font-family: lobster;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.blog_header{
+    color: #212529;
+}
+.ty_line{
+    border: 1px solid #212529;
+    width: 100px;
+    margin: auto;
+}
+.about{
+    color: whitesmoke;
+    background-image: url(../images/blogbg.jpg);
+    padding: 200px;
+}
+.about p{
+    font-family: lobster;
+    font-size: larger;
+    text-align: justify;
+}
+
+.about h1{
+    text-align: center;
+}
+

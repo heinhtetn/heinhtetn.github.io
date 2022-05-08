@@ -1,0 +1,271 @@
+h3 {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+small {
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    line-height: 40px;
+    text-align: justify;
+    display: block;
+    text-indent: 50px;
+}
+
+/* universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Tag or Element selector */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+/* attribute selector */
+a[title="google"]{
+    text-decoration: none;
+    color: purple;
+}
+
+/* ID Selector */
+#p1 {
+    color: red;
+    word-spacing: 10px;
+    text-indent: 30px;
+}
+
+#p2 {
+    color: purple;
+    word-spacing: 10px;
+    text-indent: 30px;
+}
+
+/* Class Selector */
+.p_one {
+    color: green;
+    letter-spacing: 15px;
+    line-height: 20px;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+/* Descendent Selector */
+.desc a{
+    color: red;
+}
+
+/* Child Selector */
+.child > a{
+    color: green;
+}
+
+/* Pseudo Selector */
+a:link{
+    color: red;
+}
+a:hover{
+    color: green;
+    letter-spacing: 10px;
+}
+a:active{
+    color: yellow;
+}
+a:visited{
+    color: brown;
+}
+
+/* Target */
+:target{
+    color: red;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    line-height: 30px;
+    font-size: 25px;
+    font-style: italic;
+}
+ /* Border */
+.body{
+    background-color: black;
+}
+.border_one {
+    border: 5px ridge green;
+    color: white;
+}
+.border_two{
+    color: white;
+    border-left: 7px ridge green;
+    border-bottom: 7px solid green;
+}
+.b-width{
+    color: white;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: green;
+}
+.b-style{
+    color: white;
+    border-style: solid;
+    border-color: green;
+}
+.b-mix{
+    color: white;
+    border-color: green;
+    /* border-style: solid dashed; */
+    /* T/B & L/R */
+    /* border-style: solid dashed double; */
+    /* T & L/R & B */
+    border-style: solid double dashed dotted;
+    /* T & R & B & L */
+}
+
+/* Margin */
+.margin{
+    border: 1px solid black;
+    margin: 50px;
+}
+.margin_two{
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+/* Padding */
+.pad{
+    border: 5px solid green;
+    padding: 40px 80px;
+}
+.pad1{
+    border: 5px solid red;
+    padding-left: 45px;
+    padding-top: 55px;
+}
+
+/* Inline & Block */
+.inline{
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+}
+
+.block{
+    border: 1px solid red;
+    display: inline-block;
+    width: 400px;
+}
+
+/* Float */
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+}
+
+.bd {
+    background-color: rgb(121, 121, 237);
+}
+
+/* Grid */
+.grid_one div,.grid_two div,.grid_three div,.grid_four div,.grid_five div,.grid_six div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.grid_one,.grid_two,.grid_three,.grid_four,.grid_five,.grid_six {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_two{
+    grid-column-gap: 40px;
+}
+
+.grid_three{
+    grid-row-gap: 40px;
+}
+
+.grid_four{
+    grid-gap: 50px;
+}
+
+.add_col{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.add_row{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* Position */
+.relative_parent {
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+    left: 375px;
+    position: relative;
+}
+
+.relative {
+    border: 1px solid yellow;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 500px;
+    top: 200px;
+}
+
+.absolute_parent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: 375px;
+}
+
+.absolute {
+    border: 1px double green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+/* Font */
+/* online */
+.online {
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+}
+
+/* offline */
+@font-face{
+    src: url(./BebasNeue-Regular.ttf);
+    font-family: bebas;
+}
+.offline {
+    font-family: bebas;
+    font-size: 50px;
+}
+
