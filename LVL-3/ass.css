@@ -1,0 +1,32 @@
+.form{
+    width: 70%;
+    margin: auto;
+}
+
+input[type="text"],input[type="number"],input[type="spouse1"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+input[type="radio"]{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="radio"]:checked+label {
+    color: pink;
+    font-size: 25px;
+    font-style: bold;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+}

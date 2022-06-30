@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button class="mybtn">Click Me</button>
+    <p class="myp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum similique unde eveniet excepturi ut sapiente eos inventore maiores nemo sequi laboriosam debitis, saepe quos hic commodi. Aliquid, aperiam at?
+    </p>
+
+    <form action="">
+        <input type="text" name="username">
+        <br>
+        <input type="number" name="age">
+        <br>
+        <input type="submit" value="save">
+    </form>
+
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".myp").on("click", function () {
+                alert ("Clicked the paragraph")
+                console.log($(this))
+            })
+
+        // with callback
+            $(".mybtn").on("click", function () {
+                $("p").hide("slow", function () {
+                    alert("The paragraph is now hidden")
+                });
+            });
+
+        // // without callback
+        // $(".mybtn").on("click", function (){
+        //     $("p").hide(1000);
+        //     alert("The paragraph is now hidden")
+        // });
+
+        // form submit
+            $("form").on("submit", function (e) {
+                var username = $("input[name='username']").val()
+                var age = $("input[name='age']").val()
+                
+                console.log(username)
+                console.log(age)
+
+                var err = false;
+                if (username.length < 5) {
+                    err = true;
+                }
+
+                if (age < 18) {
+                    err = true;
+                }
+
+                if (err) {
+                    e.preventDefault();
+                }
+                
+            })
+        })
+        
+      
+
+        
+    </script>
+</body>
+</html>

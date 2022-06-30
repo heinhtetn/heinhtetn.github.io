@@ -1,0 +1,11 @@
+- template (no space) (class)
+- building (need space) (object) -> real data
+
+class
+    - properties/attributes/features/characters/data members
+    - methods/functions/actions/behaviours
+
+object 
+    - unique address
+    - state/data(real)
+    - behaviours/methods

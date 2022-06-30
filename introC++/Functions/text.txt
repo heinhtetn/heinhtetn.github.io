@@ -1,0 +1,8 @@
+function signatures
+
+-return type
+-function name
+-parameters
+    -no of parameters
+    -data type
+    -order

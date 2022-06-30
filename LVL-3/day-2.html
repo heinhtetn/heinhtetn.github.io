@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day-2-selector</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti, tempore doloremque hic dolor dignissimos eum excepturi quod laborum, ipsam quam cum est labore minus accusantium incidunt quaerat ea facere?
+    </p>
+    <p class="name">
+        This is second p tag
+    </p>
+    <h2 class="name">Hein Htet Naing</h2>
+    <h2 class="name">Ko Hein</h2>
+
+    <button id="btn">Click Me</button>
+    <ul>
+        <li>first year</li>
+        <li>second year</li>
+        <li>third year</li>
+    </ul>
+
+    <section id="content">
+        <ul class="people">
+            <li>Mg Mg</li>
+            <li>Su Su</li>
+            <li>Ko Ko</li>
+        </ul>
+    </section>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Mg Mg</td>
+            <td>23</td>
+            <td>Yangon</td>
+        </tr>
+        <tr>
+            <td>Kyaw Kyaw</td>
+            <td>32</td>
+            <td>Yangon</td>
+        </tr>
+        <tr>
+            <td>Kaung Kaung</td>
+            <td>20</td>
+            <td>Yangon</td>
+        </tr>
+    </table>
+    
+
+    <script src="./jquery.min.js">
+        
+    </script>
+
+    <form action="">
+        <input type="radio" name="gender" id="male" checked>
+        <label for="gender">Male</label><br>
+        <input type="radio"  name="gender" id="female">
+        <label for="gender">Female</label><br>
+
+        <label for="hobby">Hobbies</label><br>
+        <input type="checkbox" name="hobby" id="travelling">
+        <label for="travelling">Travelling</label>
+        <input type="checkbox" name="hobby" id="reading" disabled>
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobby" id="sleeping" enabled>
+        <label for="sleeping">Sleeping</label><br>
+        <label for="cars">Choose a car:</label>
+        
+        <select id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="vw">VW</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+
+
+
+    </form>
+
+    <script>
+        $(function() {
+            // Element Selector
+            var p = $("p");
+            console.log(p);
+
+            // Class Selector
+            var c = $(".name")
+            console.log(c);
+
+            // ID Selector
+            var d = $("#btn")
+            console.log(d);
+            if(d.length){
+                console.log("Have Button")
+            }
+
+            // with element & class
+            var ec = $("h2.name")
+            console.log(ec);
+
+            // first li of the ul
+            var f = $("ul li:first")
+            console.log(f);
+
+            // parent child selector
+            var pc = $("#content ul.people li")
+            console.log(pc);
+
+            // table
+            var tb = $("tr:even")
+            console.log(tb);
+
+            // form
+            var f = $("form :checked")
+            console.log(f);
+
+            var ds = $("form :disabled")
+            console.log(ds);
+
+            var en = $("form :enabled")
+            console.log(en);
+
+            var txt = $("form :input")
+            console.log(txt);
+
+            var opt = $("form :selected")
+            console.log(opt);
+        })
+    </script>
+    
+</body>
+</html>
