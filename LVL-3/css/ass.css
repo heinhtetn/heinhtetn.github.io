@@ -16,11 +16,7 @@ input[type="radio"]{
     margin-bottom: 30px;
 }
 
-input[type="radio"]:checked+label {
-    color: pink;
-    font-size: 25px;
-    font-style: bold;
-}
+
 
 input[type="submit"]{
     margin-top: 30px;

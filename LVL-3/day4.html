@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Enter Name</label>
+      <input type="text" name="name" id="name" /><br />
+
+      <label for="category">Choose Category</label>
+      <select name="category" id="category">
+        <optgroup label="choose category">
+          <option value="1">Fashion</option>
+          <option value="2">Furniture</option>
+          <option value="3">Electronic</option>
+          <option value="4">Food</option>
+        </optgroup></select
+      ><br />
+
+      <label for="dicount">Discount</label>
+      <input
+        type="number"
+        name="discount"
+        id="discount"
+        value="15"
+        readonly
+      /><br />
+
+      <input type="submit" value="Save" />
+    </form>
+
+    <script src="./jquery.min.js"></script>
+    <script>
+      $("select[name = 'category']").on("change", function () {
+        var selected = $(this).val();
+        // alert(selected);
+        if (selected == 1) {
+          discount = 15;
+        } else if (selected == 2) {
+          discount = 20;
+        } else if (selected == 3) {
+          discount = 10;
+        } else if (selected == 4) {
+          discount = 11;
+        }
+        $("input[name='discount']").val(discount);
+      });
+
+      $("form").on("submit", function (event) {
+        event.preventDefault();
+        var name = $("input[name = 'name']").val();
+        var category = $("select[name = 'category']").val();
+
+        console.log(`${name}, ${category}`);
+      });
+    </script>
+  </body>
+</html>

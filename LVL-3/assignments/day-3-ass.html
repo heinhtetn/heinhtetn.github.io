@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>day-3-assignment</title>
+  <link rel="stylesheet" href="../css/ass.css" />
+</head>
+
+<body>
+  <form action="" class="form">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" />
+    <br />
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" />
+    <br />
+    <input type="radio" name="maritalstatus" id="single" checked value="0" /><label for="single">Single</label>
+    <input type="radio" name="maritalstatus" id="married" value="1" /><label for="married">Married</label>
+    <br />
+    <label for="spouse" id="spouse" hidden>Spouse</label>
+    <input type="text" name="spouse1" hidden />
+    <br />
+    <input type="submit" value="save" />
+  </form>
+
+  <script src="./jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#single").on("click", function () {
+        $("input[name = spouse1]").hide();
+        $("#spouse").hide();
+      });
+      $("#married").on("click", function () {
+        $("input[name = spouse1]").show();
+        $("#spouse").show();
+      });
+    });
+  </script>
+</body>
+
+</html>

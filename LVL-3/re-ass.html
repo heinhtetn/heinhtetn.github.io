@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Enter Name</label>
+      <input type="text" name="name" id="name" /><br />
+
+      <label for="age">Enter Age</label>
+      <input type="number" name="age" id="age" /><br />
+
+      <input type="radio" name="status" id="single" value="0" checked />
+      <label for="single">Single</label>
+
+      <input type="radio" name="status" id="married" value="1" />
+      <label for="married">Married</label><br />
+
+      <div class="spouse">
+        <label for="spouse">Enter Spouse</label>
+        <input type="text" name="spouse" id="spouse" /><br />
+      </div>
+
+      <input type="submit" value="Save" />
+    </form>
+
+    <!-- script -->
+    <script src="./jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".spouse").hide();
+
+        $("#married").on("click", function () {
+          $(".spouse").show();
+        });
+
+        $("#single").on("click", function () {
+          $(".spouse").hide();
+        });
+
+        $("form").on("submit", function (event) {
+          event.preventDefault();
+          var name = $("input[name = 'name']").val();
+          var age = $("input[name = 'age']").val();
+          var status = $("input[name = 'status']:checked").val();
+
+          // console.log(`${name},${age},${status}`);
+          var data = "";
+          if (status == 1) {
+            var spouse = $("input = [name=spouse]").val();
+            data += `My name is ${name} and ${age} years old and spouse name is ${spouse}.`;
+          } else if (status == 0) {
+            data += `My name is ${name} and ${age} years old. He is single.`;
+          }
+          alert(data);
+        });
+      });
+    </script>
+  </body>
+</html>

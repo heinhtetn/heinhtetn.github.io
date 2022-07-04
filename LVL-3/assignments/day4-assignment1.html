@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day4-Assignment1</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <br />
+
+        <div>
+            <label for="hobby">Hobbies</label>
+            <br />
+
+            <input type="checkbox" name="hobby" id="reading" value="reading" />
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" name="hobby" id="gaming" value="gaming" />
+            <label for="gaming">Gaming</label>
+
+            <input type="checkbox" name="hobby" id="futsal" value="futsal" />
+            <label for="futsal">Futsal</label>
+
+            <input type="checkbox" name="hobby" id="travelling" value="travelling" />
+            <label for="travelling">Travelling</label>
+
+            <input type="checkbox" name="hobby" id="drinking" value="drinking" />
+            <label for="drinking">Drinking</label>
+
+            <input type="checkbox" name="hobby" id="sleeping" value="sleeping" />
+            <label for="sleeping">Sleeping</label>
+        </div>
+
+        <input type="submit" value="Save" />
+    </form>
+
+    <script src="./jquery.min.js"></script>
+    <script>
+        $("form").on("submit", function (event) {
+            event.preventDefault();
+            var hobby = new Array();
+            $('input[type="checkbox"]:checked').each(function () {
+                hobby.push(this.value);
+            });
+            var name = $("input[name='name']").val();
+
+
+            alert(
+                `My name is ${name}. My hobbies are ${hobby}.`
+            );
+        });
+    </script>
+</body>
+
+</html>
